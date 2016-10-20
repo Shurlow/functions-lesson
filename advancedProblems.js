@@ -1,3 +1,4 @@
+//## 1
 if (!("a" in window)) {
     var a = 1;
 }
