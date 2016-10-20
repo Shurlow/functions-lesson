@@ -1,0 +1,22 @@
+{
+  "name": "functions-lesson",
+  "version": "1.0.0",
+  "description": "--- Functions are one of the core pillars of programming. The bread and butter of every programmer. In javascript they are both a tool and a concept.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shurlow/functions-lesson.git"
+  },
+  "author": "Scott Hurlow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shurlow/functions-lesson/issues"
+  },
+  "homepage": "https://github.com/Shurlow/functions-lesson#readme",
+  "dependencies": {
+    "colored-tape": "^1.0.1"
+  }
+}
