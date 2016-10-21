@@ -46,7 +46,7 @@ Functions are one of the core pillars of programming. The bread and butter of ev
 * **parameter** - a variable that is going to be passed into a function. Declared inside `()`
 * **invoke** - tell a function to execute it's body code (aka **call**)
 * **body** - defined between `{}`, the body tells the function what code to run whenever it is invoked. 
-* `var` can be used to defined a function (like defining a variable) but NOT used in parameters.
+* `var` can be used to defined a function (like defining a variable) but is NOT used in parameters.
 
 
 
