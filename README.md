@@ -39,12 +39,12 @@ Functions are one of the core pillars of programming. The bread and butter of ev
 * List 2 or 3 advantages of using functions in a real-world application
 * Describe a situation where Function Declaration syntax will not work
 
-###Key Words
+###Key Terminology
 
 * `function` - a keyword built into JavaScript that declares you are about to define a function.
+* `return` - a keyword that tells the function to stop executing and give a value back to the caller.
 * **parameter** - a variable that is going to be passed into a function. Declared inside `()`
 * **invoke** - tell a function to execute it's body code (aka **call**)
-* `return` - keyword that tells the function to stop executing and give a value back to the caller.
 * **body** - defined between `{}`, the body tells the function what code to run whenever it is invoked. 
 * `var` can be used to defined a function (like defining a variable) but NOT used in parameters.
 
@@ -106,6 +106,15 @@ console.log(twoPlusTwo())
 var value = twoPlusTwo();
 console.log(value) // prints the number '4'
 ```
+An important property of `return` is that, when used, the function stops running and exits immediately after returning the value.
+
+```javascript
+var twoPlusTwo = function() {
+  return 2 + 2; // return 'ends' function
+  console.log(2 + 2) // never reaches this line
+};
+```
+
 ####Excercise #1
 Write a function called `fruitSalad` that returns the 
 string 'i love fruit salad'
@@ -144,7 +153,9 @@ var printManyNames = function(name1, name2) {
 printManyNames('me', 'you');
 ```
 
-**-- Complete Excercise #2 --**
+####Excercise #2
+Write a function called max that takes 2 numbers
+as parameters and returns the larger number. No using Math.max()!
 
 ##Variables & Scope
 	
@@ -181,7 +192,10 @@ In general we want to avoid unwanted side effects by keeping all the variables d
 
 Sometimes we DO want function side effects. In fact, sometimes it's necessary! For example the function `console.log` does not return anything, but instead has the side effect of printing text to the console.
 	
-**-- Complete Excercise #3 --**
+####Excercise #3
+Write a function called countChar that takes a string and a character
+and returns the number of occurrences of that character found in the string.
+(Hint: 'string'.charAt(i) returns the character at position i)
 
 ##Declaration Notation (optional)
 
