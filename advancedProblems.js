@@ -1,8 +1,8 @@
 //## 1
-if (!("a" in window)) {
-    var a = 1;
-}
-console.log(a)
+// if (!("a" in 'window')) {
+//     var a = 1;
+// }
+// console.log(a)
 // alert(a);
 
 //## 2

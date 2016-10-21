@@ -1,17 +1,18 @@
 /* Exercise:
 Write a function called countChar that takes a string and a character
 and returns the number of occurrences of that character found in the string.
-(Hint: <string>.charAt(x)  )
+(Hint: <string>.charAt(i) returns the character at position i)
 */
-var count = 0
-var sum = function(numbers) {
-  for(var i = 0; i < numbers.length; i++) {
-    count = count + numbers[i]
+
+var countChar = function(string, char) {
+  var count = 0;
+  for(var i = 0; i <= string.length - 1; i++) {
+    count = count + 1
   }
+  return count
 };
 
-sum([1,2,3])
-console.log(count)
+console.log(countChar('hi mom', 'm'))
 
 //Ignore this line bellow. Just used to help test your solution.
-module.exports = sum
+module.exports = countChar

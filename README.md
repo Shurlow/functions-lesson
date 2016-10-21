@@ -1,5 +1,6 @@
 #Functions Lesson
--
+A short lesson on basic javascript functions
+
 
 ####Install
 This lesson assumes you have node & git are already installed.
@@ -8,30 +9,42 @@ This lesson assumes you have node & git are already installed.
 Paste this line into your terminal to download the lesson:
 `git clone https://github.com/Shurlow/functions-lesson.git`
 
-####Testing Solutions
-We can use the included tests to check your solutions for each excercise. To test a solution navigate to the repo's root directory and run:
+####Code Exercises
+Throughout the lesson there will be excercises to practice applying concepts. You can try running your solutions by calling:
+
+`node excercise#/solution.js` replacing `#` with the excercise number
+
+When you're ready you can test your solution by calling:
 
 `node excercise#/test.js`
 
-replacing `#` with the excercise number you'd like to test. e.g. `node excercise2/test.js`
+(note: these commands assume your terminal is located in the root directory of this repo)
 
 
 #Functions
--
 
-Functions are one of the core pillars of programming. The bread and butter of every programmer. In javascript they are both a tool and a concept.
 
-This lesson will take us through how to define and use functions, how to use parameters and return values, and how to handle variable scope effectively.
+Functions are one of the core pillars of programming. The bread and butter of every developer. In javascript functions are both a tool and a concept. This lesson will take us through how to define and use functions, how to use parameters and return values, and how to handle variable scope effectively.
 
 ###Objectives
 
-* define and call functions real good 
-* handle scoped variables in and outside functions to avoid accidental interference.
-* identify repitition in program and abstract with writing functions.
-* utilize synchronous and asynchronous functions to abstract a task.
+* Use the 'function' and 'return' keywords to write and invoke custom functions
+* Create and call functions that take multiple parameters
+* Handle variable scope in and outside functions to avoid accidental interference
+* List 2 or 3 advantages of using functions in a real-world application
+* Describe a situation where Function Declaration syntax will not work
+
+###Key Words
+
+* `function` - a keyword built into JavaScript that declares what follows is a function declaration or function expression.
+* Create and call functions that take multiple parameters
+* Handle variable scope in and outside functions to avoid accidental interference
+* List 2 or 3 advantages of using functions in a real-world application
+* Describe a situation where Function Declaration syntax will not work
 
 
-A **function** is a block of code that can be used and reused. It wraps a sequence of commands, rules, or calculations and gives them a name. It's kind like an Easy Bake Oven!
+
+A **function** is a block of code that can be used and reused. It wraps a sequence of commands, rules, or calculations and gives you a method for performing the swquence. It's kind like an Easy Bake Oven!
 
 ![easy bake oven](http://www.gannett-cdn.com/-mm-/831250b3be5476246a6f08c61a986ad46d977194/c=0-39-1421-903&r=x329&c=580x326/local/-/media/USATODAY/popcandy/2013/10/02/1380730235000-eb-81.JPG "Easy Bake Oven!")
 
@@ -86,11 +99,10 @@ If we want to see the output we can assign this function call to a new variable 
 var value = twoPlusTwo();
 console.log(value) // prints the number '4'
 ```
+**-- Complete Excercise #1 --**
 
 ####Question:
 What if we wanted it to print a specific name? What if we wanted to print lots of differnet names?
-
-**-- Complete Excercise #1 --**
 
 </details>
 
@@ -198,12 +210,3 @@ In what scenario would you use function **expression** declarations? What scenar
 
 
 </details>
-
-
-
-<style>
- summary {
-	font-size: 1.25em;
- 	font-weight: bold
- }
-</style>
