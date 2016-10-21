@@ -5,5 +5,6 @@ and returns the number of occurrences of that character found in the string.
 */
 
 
+
 //Ignore this line bellow. Just used to help test your solution.
 module.exports = countChar

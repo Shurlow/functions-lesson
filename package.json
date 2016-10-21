@@ -1,10 +1,10 @@
 {
   "name": "functions-lesson",
   "version": "1.0.0",
-  "description": "--- Functions are one of the core pillars of programming. The bread and butter of every programmer. In javascript they are both a tool and a concept.",
-  "main": "index.js",
+  "description": "A short lesson on basic javascript functions",
+  "main": "",
   "scripts": {
-    "test": "node test.js"
+    "test": "node excercise1/test.js"
   },
   "repository": {
     "type": "git",

@@ -1,8 +1,12 @@
-  (function f(f){
+  function f(f){
     return typeof f();
-  })(function(){ return 1; });
+  }
+  f(function(){ return 1; });
 
   "number"
+
+var f = (function f(){ return "1"; }, function g(){ return 2; })();
+console.log(typeof f);
   
 
 ///

@@ -39,15 +39,14 @@ Functions are one of the core pillars of programming. The bread and butter of ev
 * List 2 or 3 advantages of using functions in a real-world application
 * Describe a situation where Function Declaration syntax will not work
 
-##Key Words
+###Key Words
 
 * `function` - a keyword built into JavaScript that declares you are about to define a function.
-* **parameter** - a variable that is going to be passed into a function. Declared inside `()`.
-* 
+* **parameter** - a variable that is going to be passed into a function. Declared inside `()`
 * **invoke** - tell a function to execute it's body code (aka **call**)
 * `return` - keyword that tells the function to stop executing and give a value back to the caller.
-* `{}` - syntax that hold the function body definition
-* 
+* **body** - defined between `{}`, the body tells the function what code to run whenever it is invoked. 
+* `var` can be used to defined a function (like defining a variable) but NOT used in parameters.
 
 
 
@@ -99,9 +98,11 @@ var twoPlusTwo = function() {
 The function `twoPlusTwo` returns the number `4` but
 when you call `twoPlusTwo()` nothing is printed. This is because the `return` command only passes the variable on without logging anything.
 
-If we want to see the output we can assign this function call to a new variable and log the variable.
+If we want to see the output we can put the function call inside a `console.log` or assign the function call to a variable and log that variable.
 
 ```javascript
+console.log(twoPlusTwo())
+//or
 var value = twoPlusTwo();
 console.log(value) // prints the number '4'
 ```
@@ -182,7 +183,7 @@ Sometimes we DO want function side effects. In fact, sometimes it's necessary! F
 	
 **-- Complete Excercise #3 --**
 
-##Declaration Notation
+##Declaration Notation (optional)
 
 There are actually two ways of defining a function. Earlier we learned the expression notation using `var` and `function` but there is a slightly shorter option.
 Keep in mind, though, that the way you define a function changes the scope (aka when/where it can be used).
@@ -218,6 +219,7 @@ We learned how to:
 * Handle variables in and outside functions
 * Decide when and when not to use different function definition syntax
 
-**Lets try and answer our big question:**
 
-Why might function be helpful when writing programs or applications? What advantages does grouping code in functions give us?
+Now that we have a grasp on using functions we can answer our initial question:
+
+**Why are function helpful when writing programs or applications? What are 2-3 advantages to grouping code in functions?**

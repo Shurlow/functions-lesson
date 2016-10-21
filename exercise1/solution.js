@@ -4,5 +4,6 @@ string 'i love fruit salad'
 */
 
 
+
 //Ignore this line bellow. Just used to help test your solution.
 module.exports = fruitSalad
