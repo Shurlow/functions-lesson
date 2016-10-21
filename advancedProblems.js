@@ -1,3 +1,12 @@
+  (function f(f){
+    return typeof f();
+  })(function(){ return 1; });
+
+  "number"
+  
+
+///
+
 //## 1
 // if (!("a" in 'window')) {
 //     var a = 1;

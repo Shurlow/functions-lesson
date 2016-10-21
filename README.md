@@ -51,12 +51,14 @@ Functions are one of the core pillars of programming. The bread and butter of ev
 
 
 
-A **function** is a block of code that can be used and reused. It wraps a sequence of commands, rules, or calculations and gives you a method for performing the swquence. It's kind like an Easy Bake Oven!
+A **function** is a block of code that can be used and reused. It wraps a sequence of commands, rules, or calculations and gives it a name. It's kind like an Easy Bake Oven!
 
 ![easy bake oven](http://www.gannett-cdn.com/-mm-/831250b3be5476246a6f08c61a986ad46d977194/c=0-39-1421-903&r=x329&c=580x326/local/-/media/USATODAY/popcandy/2013/10/02/1380730235000-eb-81.JPG "Easy Bake Oven!")
 
 You put the uncooked cake batter into the oven and a delicously baked cake exits minutes later.
 The oven doesnt care how you made the cake batter, it just knows ONE thing, how to bake.
+
+####Question:
 
 Why might this concept be helpful when writing programs or applications?
 What advantages does grouping code in functions give us?
@@ -85,7 +87,7 @@ the code between the `{ }` is called the function **body**. In this example the 
 
 `printName()`
 
-##Return
+##Return Values
 
 Sometimes you want a function to **return** a new value instead of just logging it. For instance `Math.random` is a function that returns a random number for you to use. To return a value from a function use the `return` keyword followed by the value you want to return.
 
@@ -205,3 +207,17 @@ A function created with this **declaration** syntax is automatically moved to th
 
 ####Question:
 In what scenario would you use function **expression** declarations? What scenario would you rather use function **declaration** style?
+
+
+##Summary
+We learned how to:
+
+* Use the `function` keyword to define a function
+* Return values with the `return` keyword
+* Pass multiple parameters into a function
+* Handle variables in and outside functions
+* Decide when and when not to use different function definition syntax
+
+**Lets try and answer our big question:**
+
+Why might function be helpful when writing programs or applications? What advantages does grouping code in functions give us?

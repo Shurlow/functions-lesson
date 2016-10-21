@@ -1,10 +1,8 @@
-/* Exercise:
-Write a function called fruitSalad that takes 3 fruit strings as input
-and returns a string with 'salad' at the end.
+/* Exercise #2:
+Write a function called max that takes 2 numbers
+as parameters and returns the largest number. No using Math.min!
 */
-var fruitSalad = function(fruit1, fruit2, fruit3) {
-  return fruit1 + fruit2 + fruit3 + ' salad'
-}
+
 
 //Ignore this line bellow. Just used to help test your solution.
-module.exports = fruitSalad
+module.exports = max
