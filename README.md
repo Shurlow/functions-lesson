@@ -117,7 +117,7 @@ var twoPlusTwo = function() {
 
 ####Excercise #1
 Write a function called `fruitSalad` that returns the 
-string 'i love fruit salad'
+string 'i love fruit salad'. [jsbin](https://jsbin.com/qejibataso/edit?js,console)
 
 ####Question:
 What if we wanted it to print a specific name? What if we wanted to print lots of differnet names?
@@ -155,7 +155,7 @@ printManyNames('me', 'you');
 
 ####Excercise #2
 Write a function called max that takes 2 numbers
-as parameters and returns the larger number. No using Math.max()!
+as parameters and returns the larger number. No using Math.max()! [jsbin](https://jsbin.com/jerusateva/edit?js,console)
 
 ##Variables & Scope
 	
@@ -195,7 +195,7 @@ Sometimes we DO want function side effects. In fact, sometimes it's necessary! F
 ####Excercise #3
 Write a function called countChar that takes a string and a character
 and returns the number of occurrences of that character found in the string.
-(Hint: 'string'.charAt(i) returns the character at position i)
+(Hint: 'string'.charAt(i) returns the character at position i) [jsbin](https://jsbin.com/tuwubeyuga/edit?js,console)
 
 ##Declaration Notation (optional)
 
