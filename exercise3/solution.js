@@ -7,12 +7,14 @@ and returns the number of occurrences of that character found in the string.
 var countChar = function(string, char) {
   var count = 0;
   for(var i = 0; i <= string.length - 1; i++) {
-    count = count + 1
+    if (string.charAt(i) === char) {
+      count = count + 1
+    }
   }
   return count
 };
 
-console.log(countChar('hi mom', 'm'))
+console.log(countChar('hi mom oooo', 'o'))
 
 //Ignore this line bellow. Just used to help test your solution.
 module.exports = countChar

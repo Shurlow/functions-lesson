@@ -1,15 +1,19 @@
 #Functions Lesson
 A short lesson on basic javascript functions
 
+<details>
+	<summary>**Download**</summary>
 
-####Install
-This lesson assumes you have node & git are already installed.
+This lesson assumes that you have node & git already installed. Alternatively you can solve the excercises in [jsbin](https://jsbin.com/?js,console), and use `console.log` to compare answers.
 
+To download paste this line into your terminal:
+`git clone https://github.com/Shurlow/functions-lesson.git
+`
+</details>
 
-Paste this line into your terminal to download the lesson:
-`git clone https://github.com/Shurlow/functions-lesson.git`
+<details>
+	<summary>**Running Code Exercises**</summary>
 
-####Code Exercises
 Throughout the lesson there will be excercises to practice applying concepts. You can try running your solutions by calling:
 
 `node excercise#/solution.js` replacing `#` with the excercise number
@@ -18,7 +22,9 @@ When you're ready you can test your solution by calling:
 
 `node excercise#/test.js`
 
-(note: these commands assume your terminal is located in the root directory of this repo)
+(note: these commands require your terminal being located in the root directory of this repo)
+
+</details>
 
 
 #Functions
@@ -28,19 +34,20 @@ Functions are one of the core pillars of programming. The bread and butter of ev
 
 ###Objectives
 
-* Use the 'function' and 'return' keywords to write and invoke custom functions
-* Create and call functions that take multiple parameters
+* Define and call functions that take one or multiple parameters and return a value
 * Handle variable scope in and outside functions to avoid accidental interference
 * List 2 or 3 advantages of using functions in a real-world application
 * Describe a situation where Function Declaration syntax will not work
 
-###Key Words
+##Key Words
 
-* `function` - a keyword built into JavaScript that declares what follows is a function declaration or function expression.
-* Create and call functions that take multiple parameters
-* Handle variable scope in and outside functions to avoid accidental interference
-* List 2 or 3 advantages of using functions in a real-world application
-* Describe a situation where Function Declaration syntax will not work
+* `function` - a keyword built into JavaScript that declares you are about to define a function.
+* **parameter** - a variable that is going to be passed into a function. Declared inside `()`.
+* 
+* **invoke** - tell a function to execute it's body code (aka **call**)
+* `return` - keyword that tells the function to stop executing and give a value back to the caller.
+* `{}` - syntax that hold the function body definition
+* 
 
 
 
@@ -64,8 +71,7 @@ What advantages does grouping code in functions give us?
   
 </details>
 
-<details>
-	<summary>Defining & Using Functions</summary>
+##Defining & Using Functions
 
 We can define functions in the same way as regular variable definitions but using the `function` keyword.
 
@@ -78,10 +84,8 @@ var printName = function() {
 the code between the `{ }` is called the function **body**. In this example the  body simply logs the string "name" to the console. **Calling** or **invoking** a function tells the function to execute the code in it's body. To call this function we simply use its name and append `()` like so:
 
 `printName()`
-</details>
 
-<details>
-	<summary>Return</summary>
+##Return
 
 Sometimes you want a function to **return** a new value instead of just logging it. For instance `Math.random` is a function that returns a random number for you to use. To return a value from a function use the `return` keyword followed by the value you want to return.
 
@@ -99,15 +103,14 @@ If we want to see the output we can assign this function call to a new variable 
 var value = twoPlusTwo();
 console.log(value) // prints the number '4'
 ```
-**-- Complete Excercise #1 --**
+####Excercise #1
+Write a function called `fruitSalad` that returns the 
+string 'i love fruit salad'
 
 ####Question:
 What if we wanted it to print a specific name? What if we wanted to print lots of differnet names?
 
-</details>
-
-<details>
-	<summary>Parameters</summary>
+##Parameters
 	
 Functions can also take values as input and return new values as output. The inputs are called **parameters** and are defined inside the `()`. A parameter could be a string, a number, an array, an object and even another function
 
@@ -139,10 +142,8 @@ printManyNames('me', 'you');
 ```
 
 **-- Complete Excercise #2 --**
-</details>
 
-<details>
-	<summary>Variables & Scope</summary>
+##Variables & Scope
 	
 An important property of functions is that variables declared inside functions (like parameters) are **local** to the function body. This means that parameters and local variables only exist *inside* the function and are re-created every time the function is called.
 
@@ -178,10 +179,8 @@ In general we want to avoid unwanted side effects by keeping all the variables d
 Sometimes we DO want function side effects. In fact, sometimes it's necessary! For example the function `console.log` does not return anything, but instead has the side effect of printing text to the console.
 	
 **-- Complete Excercise #3 --**
-</details>
 
-<details>
-	<summary>Declaration Notation</summary>
+##Declaration Notation
 
 There are actually two ways of defining a function. Earlier we learned the expression notation using `var` and `function` but there is a slightly shorter option.
 Keep in mind, though, that the way you define a function changes the scope (aka when/where it can be used).
@@ -206,7 +205,3 @@ A function created with this **declaration** syntax is automatically moved to th
 
 ####Question:
 In what scenario would you use function **expression** declarations? What scenario would you rather use function **declaration** style?
-
-
-
-</details>
